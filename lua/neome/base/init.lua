@@ -4,9 +4,10 @@ if vim.g.neome then
 	local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
 	if not (vim.uv or vim.loop).fs_stat(lazypath) then
-  -- bootstrap lazy.nvim
-  -- stylua: ignore
-  vim.fn.system({ "git", "clone", "--filter=blob:none", "https://github.com/folke/lazy.nvim.git", "--branch=stable", lazypath })
+		-- bootstrap lazy.nvim
+		-- stylua: ignore
+		vim.fn.system({ "git", "clone", "--filter=blob:none", "https://github.com/folke/lazy.nvim.git", "--branch=stable",
+			lazypath })
 	end
 	vim.opt.rtp:prepend(lazypath)
 
@@ -14,6 +15,7 @@ if vim.g.neome then
 		spec = {
 			-- add LazyVim and import its plugins
 			-- { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+			{ "AstroNvim/astrotheme" },
 			-- import/override with your plugins
 			-- { import = "plugins" },
 		},
@@ -27,6 +29,7 @@ if vim.g.neome then
 			-- version = "*", -- try installing the latest stable version for plugins that support semver
 		},
 		checker = { enabled = true }, -- automatically check for plugin updates
+		install = { colorscheme = { "astrodark" } },
 		performance = {
 			rtp = {
 				-- disable some rtp plugins
