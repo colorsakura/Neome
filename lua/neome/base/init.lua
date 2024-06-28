@@ -1,6 +1,10 @@
 local M = {}
 
 if vim.g.neome then
+	require("neome.base.options")
+	require("neome.base.keymaps")
+	require("neome.base.autocmds")
+
 	local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
 	if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -17,7 +21,7 @@ if vim.g.neome then
 			-- { "LazyVim/LazyVim", import = "lazyvim.plugins" },
 			{ "AstroNvim/astrotheme" },
 			-- import/override with your plugins
-			-- { import = "plugins" },
+			{ import = "neome.editor" }
 		},
 		defaults = {
 			-- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
@@ -49,9 +53,5 @@ if vim.g.neome then
 else
 	return M
 end
-
-require("neome.base.options")
-require("neome.base.keymaps")
-require("neome.base.autocmds")
 
 return M
