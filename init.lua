@@ -1,5 +1,5 @@
+vim.api.nvim_echo({ "Welcome to Neome!" }, true, {})
+
 vim.g.neome = true
 
-vim.notify("Welcome to Neome!")
-
-require 'neome'
+require("neome")
