@@ -6,6 +6,7 @@ return {
 		      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
 		      "MunifTanjim/nui.nvim",
 		},
+		event = { "VeryLazy" },
 		keys = {
 			{
 				"<leader>e",
@@ -38,12 +39,14 @@ return {
 				end,
 			},
 		},
+		event = { "VeryLazy" },
 		config = function()
 			vim.tbl_map(require("astrolsp").lsp_setup, require("astrolsp").config.servers)
 		end,
 	},
 	{
 		"williamboman/mason.nvim",
+		event = { "VeryLazy" },
 		config = function()
 			require("mason").setup()
 		end,

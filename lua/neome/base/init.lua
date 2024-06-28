@@ -19,7 +19,6 @@ if vim.g.neome then
 		spec = {
 			-- add LazyVim and import its plugins
 			-- { "LazyVim/LazyVim", import = "lazyvim.plugins" },
-			{ "AstroNvim/astrotheme" },
 			-- import/override with your plugins
 			{ import = "neome.editor" }
 		},
@@ -33,7 +32,7 @@ if vim.g.neome then
 			-- version = "*", -- try installing the latest stable version for plugins that support semver
 		},
 		checker = { enabled = true }, -- automatically check for plugin updates
-		install = { colorscheme = { "astrodark" } },
+		-- install = { colorscheme = { "astrodark" } },
 		performance = {
 			rtp = {
 				-- disable some rtp plugins

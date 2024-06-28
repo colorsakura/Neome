@@ -1,7 +1,6 @@
 {
   "astrolsp": { "branch": "main", "commit": "fd2666a283af98182b1e8b01c85656071093a825" },
-  "astrotheme": { "branch": "main", "commit": "ab0cb19c32181126f92b8239700cec97ba81b0fd" },
-  "lazy.nvim": { "branch": "main", "commit": "60fe75c88db22025989600bb53dba247654d9ed5" },
+  "lazy.nvim": { "branch": "main", "commit": "a36ebd2a75145cd8a377b1847a7a1ccf31b2ab7a" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "37a336b653f8594df75c827ed589f1c91d91ff6c" },
   "mason.nvim": { "branch": "main", "commit": "0950b15060067f752fde13a779a994f59516ce3d" },
   "neo-tree.nvim": { "branch": "main", "commit": "206241e451c12f78969ff5ae53af45616ffc9b72" },
