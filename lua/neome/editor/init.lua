@@ -34,6 +34,7 @@ return {
 				dependencies = { "williamboman/mason.nvim" },
 				opts = function()
 					return {
+						ensure_installed = { "lua_ls" },
 						handlers = { function(server) require("astrolsp").lsp_setup(server) end }
 					}
 				end,
